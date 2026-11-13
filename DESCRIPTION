@@ -5,7 +5,7 @@ Authors@R:
     person(given = "Yizhi",
            family = "Zhang",
            role = c("aut", "cre"),
-           email = "yizhizhang@hsph.harvard.edu"))
+           email = "yizhizhang@hsph.harvard.edu")
 Description: This project uses R to explore and analyze publicly
     available datasets. It aims to identify meaningful patterns
     through data manipulation and visualization. The project also
