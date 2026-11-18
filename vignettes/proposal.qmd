@@ -11,25 +11,25 @@ For my final project, I plan to use two CDC datasets: waterborne and cdcmurd. I 
 
 ### CDC Waterborne Illness Outbreaks
 
-**Research Question**: How do seasonal patterns in reported waterborne illness outbreaks differ across regions in the United States?
+**Research Question**: How has the distribution of water exposure types among reported waterborne outbreaks changed from 1971 to 2023 in the United States?
 
-**Population and Unit of Analysis**: The dataset contains reported outbreaks in the United States from 1971 to 2023. I will focus on records where primary_mode == "Water". There are 3,106 records in this group. Each record represents a reported outbreak. For regional comparisons, I will use 3,079 records that can be matched to the 50 U.S. states. I will group the records by season, region, and year to calculate outbreak counts.
+**Population and Unit of Analysis**: The dataset contains reported outbreaks in the United States from 1971 to 2023. I will focus on records where primary_mode == "Water", which gives 3,106 records. Each record represents one reported outbreak.
 
-**Exposure**: The main exposures are season and geographic region. I will use the month variable to create four seasons: winter (December–February), spring (March–May), summer (June–August), and fall (September–November). I will use state.region in R to group states into four geographic regions.
+**Exposure**: The main exposure is calendar decade, created from the year variable. I will group outbreaks into the 1970s, 1980s, 1990s, 2000s, 2010s, and 2020s. Calendar decade will be treated as a categorical variable.
 
-**Outcome**: Number of reported waterborne illness outbreaks, which is a count variable.
+**Outcome**: Water exposure type, which is a categorical variable. I will classify outbreaks into six groups: drinking water, treated recreational water, untreated recreational water, other/environmental water, undetermined water, and multiple exposure types. If an outbreak has more than one exposure type, I will put it in the multiple exposure group.
 
-**Potential confounders**: Calendar year may affect the results because reporting practices and surveillance may change over time. I will account for year by comparing seasonal and regional patterns within different time periods.
+**Potential confounders**: Geographic region may be related to water exposure types, so I plan to compare the patterns across regions. Reporting practices may also have changed over time, which could affect the results. However, I do not have enough information to adjust for these changes, so I will mention this as a limitation.
 
-**Missing data**: I will check for missing values in state, month, and year. Among the 3,106 waterborne outbreak records, 27 cannot be matched to the four geographic regions because they refer to locations such as Puerto Rico, Washington, D.C., other territories, or multistate outbreaks. I will exclude these 27 records from regional comparisons and report this exclusion in the final analysis. I will also exclude records with missing month or year information when needed.
+**Missing data**: I checked the year and water exposure type variables in the 3,106 waterborne outbreak records and found no missing or invalid values. Therefore, I will keep all 3,106 records for the main analysis. 
 
-**Analysis**: I plan to first convert the original list into a tidy data frame. Then I will calculate outbreak counts by season and region and create grouped bar plots to compare seasonal patterns across regions. I will also write an R function to summarize outbreak counts for different groups.
+**Analysis**: I will calculate the number and percentage of outbreaks for each water exposure type in each decade. Then I will create 100% stacked bar plots to compare the patterns over time. I will discuss how changes in reporting practices may affect the results.
 
 ### CDC Homicide Mortality
 
 **Research Question**: Have differences in homicide mortality rates between U.S. states increased or decreased from 2014 to 2024?
 
-**Study Population Selection**: I will exclude Washington, D.C. because my research question focuses on differences between the 50 U.S. states. Washington, D.C. is a federal district rather than a state, and it differs from most states in geographic size, population size, and urbanization. These differences may affect its homicide mortality rate and make it less comparable with the states. Since my outcome is the standard deviation of state homicide mortality rates, including D.C. could also affect the results. Therefore, I will exclude D.C. based on my study population definition rather than its observed mortality rate.
+**Study Population Selection**: I will exclude Washington, D.C. because my research question focuses on differences between the 50 U.S. states. Washington, D.C. is a federal district rather than a state, and it differs from most states in geographic size, population size, and urbanization. These differences may affect its homicide mortality rate and make it less comparable with the states. Since my outcome is the standard deviation of state homicide mortality rates, including D.C. could also affect the results. 
 
 **Population and Unit of Analysis**: I will use homicide mortality data for 50 U.S. states from 2014 to 2024. Each original record represents one state in one year. I will calculate summary statistics across states for each year, so the main trend analysis will use yearly summaries.
 
