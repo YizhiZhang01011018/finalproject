@@ -42,4 +42,3 @@ For my final project, I plan to use two CDC datasets: waterborne and cdcmurd. I 
 **Missing Data**: From 2014 to 2024, there are 550 state-year records for the 50 U.S. states, excluding Washington, D.C. Among these records, 25 have missing homicide mortality rates, leaving 525 available records. For the main analysis, I will calculate SD and IQR using states with available death rates in each year, without imputing missing values. I will report the number of available states each year. As a sensitivity analysis, I will repeat the calculations using only states with complete data for all 11 years to check whether missing data affect the observed trends.
 
 **Analysis**: I will calculate SD and IQR of state homicide mortality rates for each year and I will create line plots to show whether differences between states have increased or decreased over time. I also plan to write an R function to calculate these statistics for different years.
-
