@@ -21,7 +21,7 @@ For my final project, I plan to use two CDC datasets: waterborne and cdcmurd. I 
 
 **Potential confounders**: Geographic region may be related to water exposure types, so I plan to compare the patterns across regions. Reporting practices may also have changed over time, which could affect the results. However, I do not have enough information to adjust for these changes, so I will mention this as a limitation.
 
-**Missing data**: I checked the year and water exposure type variables in the 3,106 waterborne outbreak records and found no missing or invalid values. Therefore, I will keep all 3,106 records for the main analysis. 
+**Missing data**: I checked the year and water exposure type variables in the 3,106 waterborne outbreak records and found no missing or invalid values. Therefore, I will keep all 3,106 records for the main analysis.
 
 **Analysis**: I will calculate the number and percentage of outbreaks for each water exposure type in each decade. Then I will create 100% stacked bar plots to compare the patterns over time. I will discuss how changes in reporting practices may affect the results.
 
@@ -29,7 +29,7 @@ For my final project, I plan to use two CDC datasets: waterborne and cdcmurd. I 
 
 **Research Question**: Have differences in homicide mortality rates between U.S. states increased or decreased from 2014 to 2024?
 
-**Study Population Selection**: I will exclude Washington, D.C. because my research question focuses on differences between the 50 U.S. states. Washington, D.C. is a federal district rather than a state, and it differs from most states in geographic size, population size, and urbanization. These differences may affect its homicide mortality rate and make it less comparable with the states. Since my outcome is the standard deviation of state homicide mortality rates, including D.C. could also affect the results. 
+**Study Population Selection**: I will exclude Washington, D.C. because my research question focuses on differences between the 50 U.S. states. Washington, D.C. is a federal district rather than a state, and it differs from most states in geographic size, population size, and urbanization. These differences may affect its homicide mortality rate and make it less comparable with the states. Since my outcome is the standard deviation of state homicide mortality rates, including D.C. could also affect the results.
 
 **Population and Unit of Analysis**: I will use homicide mortality data for 50 U.S. states from 2014 to 2024. Each original record represents one state in one year. I will calculate summary statistics across states for each year, so the main trend analysis will use yearly summaries.
 
@@ -42,3 +42,15 @@ For my final project, I plan to use two CDC datasets: waterborne and cdcmurd. I 
 **Missing Data**: From 2014 to 2024, there are 550 state-year records for the 50 U.S. states, excluding Washington, D.C. Among these records, 25 have missing homicide mortality rates, leaving 525 available records. For the main analysis, I will calculate SD and IQR using states with available death rates in each year, without imputing missing values. I will report the number of available states each year. As a sensitivity analysis, I will repeat the calculations using only states with complete data for all 11 years to check whether missing data affect the observed trends.
 
 **Analysis**: I will calculate SD and IQR of state homicide mortality rates for each year and I will create line plots to show whether differences between states have increased or decreased over time. I also plan to write an R function to calculate these statistics for different years.
+
+### AI Use Disclosure
+
+I used ChatGPT (GPT-6) to help brainstorm research questions, understand the datasets, and improve the wording of my proposal.
+
+Prompts used: 1. "Can you help me narrow down changes in water exposure types into a specific and measurable research question?". 2. "Can you help me evaluate whether my research question is clear, specific, and feasible using the available dataset?" 3. "What factors should I consider when choosing an exposure and an outcome for a descriptive analysis?" 4. "Can you review my proposed analysis plan and identify any unclear definitions or missing information?" 5. "Can you explain how to examine missing values in R?" 6. "What are the limitations of using standard deviation to compare differences across states?"
+
+### AI Use Disclosure
+
+I used ChatGPT (GPT-6) to help brainstorm research questions, understand the datasets, and improve the wording of my proposal.
+
+Prompts used: 1. "Can you help me narrow down changes in water exposure types into a specific and measurable research question?". 2. "Can you help me evaluate whether my research question is clear, specific, and feasible using the available dataset?" 3. "What factors should I consider when choosing an exposure and an outcome for a descriptive analysis?" 4. "Can you review my proposed analysis plan and identify any unclear definitions or missing information?" 5. "Can you explain how to examine missing values in R?" 6. "What are the limitations of using standard deviation to compare differences across states?"
