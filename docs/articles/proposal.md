@@ -97,3 +97,33 @@ rates for each year and I will create line plots to show whether
 differences between states have increased or decreased over time. I also
 plan to write an R function to calculate these statistics for different
 years.
+
+### AI Use Disclosure
+
+I used ChatGPT (GPT-6) to help brainstorm research questions, understand
+the datasets, and improve the wording of my proposal.
+
+Prompts used: 1. “Can you help me narrow down changes in water exposure
+types into a specific and measurable research question?”. 2. “Can you
+help me evaluate whether my research question is clear, specific, and
+feasible using the available dataset?” 3. “What factors should I
+consider when choosing an exposure and an outcome for a descriptive
+analysis?” 4. “Can you review my proposed analysis plan and identify any
+unclear definitions or missing information?” 5. “Can you explain how to
+examine missing values in R?” 6. “What are the limitations of using
+standard deviation to compare differences across states?”
+
+### AI Use Disclosure
+
+I used ChatGPT (GPT-6) to help brainstorm research questions, understand
+the datasets, and improve the wording of my proposal.
+
+Prompts used: 1. “Can you help me narrow down changes in water exposure
+types into a specific and measurable research question?”. 2. “Can you
+help me evaluate whether my research question is clear, specific, and
+feasible using the available dataset?” 3. “What factors should I
+consider when choosing an exposure and an outcome for a descriptive
+analysis?” 4. “Can you review my proposed analysis plan and identify any
+unclear definitions or missing information?” 5. “Can you explain how to
+examine missing values in R?” 6. “What are the limitations of using
+standard deviation to compare differences across states?”
